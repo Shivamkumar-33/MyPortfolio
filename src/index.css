@@ -10,7 +10,7 @@
 
   --color-card: hsl(var(--card));
   
-  --animate-skills-scroll: skills-scroll 30s linear infinite;
+  --animate-skills-scroll: skills-scroll 10s linear infinite;
 
   @keyframes skills-scroll {
     from {
@@ -198,4 +198,7 @@
 }
 .animate-skills-scroll:hover {
   animation-play-state: paused;
+}
+::-webkit-scrollbar {
+  display: none;
 }
