@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 @import "tailwindcss";
 
 @theme {
@@ -201,4 +202,28 @@
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* Typewriter Animation */
+.typewriter-text {
+  display: inline-block;
+  border-right: 2px solid rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter-animation {
+  animation: 
+    typewriter 3s steps(18) infinite, 
+    blinkingCursor 500ms steps(18) infinite;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blinkingCursor {
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
 }
